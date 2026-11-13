@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniFlow - 分享此刻</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>MiniFlow</h1>
+      <p class="slogan">分享此刻，记录生活</p>
+    </header>
+
+    <section class="composer" aria-label="发布动态">
+      <textarea id="content-input" maxlength="280" rows="3"
+        placeholder="有什么新鲜事想告诉大家？"></textarea>
+      <div class="composer-footer">
+        <span id="char-count" class="char-count">0 / 280</span>
+        <button id="publish-btn" class="btn-primary">发布</button>
+      </div>
+    </section>
+
+    <section class="feed" aria-label="动态列表">
+      <h2 class="feed-title">最新动态</h2>
+      <ul id="feed-list" class="feed-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
